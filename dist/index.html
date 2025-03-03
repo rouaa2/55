@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>test</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>選號器</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .result {
+            font-size: 2em;
+            color: #2c3e50;
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h1>隨機選號器</h1>
+    <p>點擊下面的按鈕來選擇一個隨機號碼！</p>
+    <button onclick="generateNumber()">選號</button>
+    <div class="result" id="numberResult"></div>
+
+    <script>
+        function generateNumber() {
+            // 設定選擇範圍
+            const min = 1;
+            const max = 100;
+
+            // 隨機生成一個號碼
+            const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+
+            // 顯示選擇的號碼
+            document.getElementById("numberResult").textContent = "選中的號碼是：" + randomNumber;
+        }
+    </script>
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
