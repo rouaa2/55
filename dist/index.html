@@ -40,8 +40,8 @@
     </style>
 </head>
 <body>
-    <h1>隨機選號器</h1>
-    <p>點擊下面的按鈕來選擇一個隨機號碼！</p>
+    <h1>rouaa2老師的隨機選號器</h1>
+    <p>點擊下面的按鈕來選擇一個隨機號碼！(1-50)</p>
     <button onclick="generateNumber()">選號</button>
     <div class="result" id="numberResult"></div>
 
@@ -49,7 +49,7 @@
         function generateNumber() {
             // 設定選擇範圍
             const min = 1;
-            const max = 100;
+            const max = 50;
 
             // 隨機生成一個號碼
             const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
